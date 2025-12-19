@@ -24,7 +24,7 @@ const changeTextColor = function (element, color) {
 
 // VARIABLES
 let secretNumber = getRandomNumber(); // Secret Number to be guessed
-let score = 20; // Attempts left
+let score = 5; // Attempts left
 let highscore = 0; // Highscore
 let win = false;
 
@@ -92,7 +92,7 @@ document.querySelector('.check').addEventListener('click', function () {
 // Reset game
 document.querySelector('.reset').addEventListener('click', function () {
   secretNumber = getRandomNumber();
-  score = 20;
+  score = 5;
   win = false;
   displayMessage('.message', 'Start guessing...');
   displayMessage('.score', score);
